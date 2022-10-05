@@ -2,7 +2,7 @@ package com.company.day2;
 
 public class CalcultorMain {
 
-//
+////
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         calculator.plus(10);
