@@ -2,7 +2,7 @@ package com.company.day2;
 
 public class Calculator implements Random {
 
-    int a;
+    int a;//
 
     public int random() {
         int r = (int) (Math.random() * 9) + 1;
