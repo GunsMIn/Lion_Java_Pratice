@@ -1,29 +1,34 @@
 package com.company.day2;
 
-public class Calculator {
+public class Calculator implements Random {
 
-     int a;
-     int b;
+    int a;
 
-    public Calculator(int a,int b) {
-        this.a = a;
-        this.b = b;
+    public int random() {
+        int r = (int) (Math.random() * 9) + 1;
+        return r;
     }
 
-    public int plus() {
-        return a + b;
+    public void plus(int a) {
+        System.out.println(a + random());
     }
 
-    public int minus() {
-        return a-b;
+    public void minus(int a) {
+        System.out.println(a - random());
     }
 
-    public int multiple() {
-        return a * b;
+    public void multiple(int a)
+    {
+        System.out.println(a * random());
     }
 
-    public double divide() {
-        return (double)a / b;
+    public void divide(int a) {
+        try {
+            System.out.println(a / random());
+        }catch (Exception e){
+            System.out.println("랜덤하게 생성된 숫자가 0입니다");
+        }
+
     }
 
 

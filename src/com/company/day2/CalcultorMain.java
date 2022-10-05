@@ -4,12 +4,10 @@ public class CalcultorMain {
 
 
     public static void main(String[] args) {
-        Calculator calculator = new Calculator(10,20);
-        calculator.plus();
-        calculator.minus();
-        calculator.multiple();
-
-        System.out.println(calculator.divide());
-
+        Calculator calculator = new Calculator();
+        calculator.plus(10);
+        calculator.minus(10);
+        calculator.multiple(10);
+        calculator.divide(10);
     }
 }
