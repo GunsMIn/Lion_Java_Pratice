@@ -1,4 +1,4 @@
-package com.company.day03;
+package com.company.day03.set;
 
 public interface NumberCreator {
 

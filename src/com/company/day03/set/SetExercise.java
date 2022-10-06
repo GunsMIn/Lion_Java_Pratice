@@ -1,4 +1,4 @@
-package com.company.day03;
+package com.company.day03.set;
 
 import java.util.HashSet;
 import java.util.Set;
