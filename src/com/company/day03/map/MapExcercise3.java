@@ -2,6 +2,7 @@ package com.company.day03.map;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapExcercise3 {
 
@@ -20,11 +21,14 @@ public class MapExcercise3 {
         }
 
 
-        
+        Set<Map.Entry<Character, Integer>> alpabetset = alphabetMap.entrySet();
+        for (Map.Entry<Character, Integer> each : alpabetset) {
+            System.out.println("알파벳"+each.getKey()+":"+each.getValue()+"개");
 
-        for (Character key : alphabetMap.keySet()) {
-            System.out.println("알파벳" + alphabetMap.keySet() + ":" + alphabetMap.get(key));
         }
+
+
+       
 
 
 
