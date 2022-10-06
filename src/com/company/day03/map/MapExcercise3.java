@@ -20,15 +20,15 @@ public class MapExcercise3 {
             }
         }
 
+        //key를 하나씩 가져오려고
+        Set<Map.Entry<Character, Integer>> alpabetSet = alphabetMap.entrySet();
 
-        Set<Map.Entry<Character, Integer>> alpabetset = alphabetMap.entrySet();
-        for (Map.Entry<Character, Integer> each : alpabetset) {
-            System.out.println("알파벳"+each.getKey()+":"+each.getValue()+"개");
-
+        for (Map.Entry<Character, Integer> eachAlpabet : alpabetSet) {
+            System.out.println("알파벳"+eachAlpabet.getKey()+":"+eachAlpabet.getValue()+"개");
         }
 
 
-       
+
 
 
 
