@@ -9,6 +9,7 @@ public class ReadFile {
     public static void main(String[] args) throws IOException {
         FileReader reader = new FileReader("./a_file.txt");
         char read = (char) reader.read();
+        System.out.println("read = " + read);
     }
 
 }
