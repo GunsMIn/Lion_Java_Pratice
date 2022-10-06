@@ -1,4 +1,4 @@
-package com.company.day2;
+package com.company.day02;
 
 public class RandomNumberMaker implements NumberMaker {
 

@@ -1,6 +1,5 @@
-package com.company.day2;
+package com.company.day02;
 
-import javax.naming.Name;
 import java.util.ArrayList;
 
 public class List {
