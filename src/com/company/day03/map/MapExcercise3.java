@@ -7,6 +7,17 @@ import java.util.Set;
 public class MapExcercise3 {
 
 
+    public boolean isAlpabe(String str) {
+        boolean answer = false;
+        for (char c : str.toCharArray()) {
+            if ((c >= 65 && c <= 90) || (c>=97 && c<=122)) {
+              answer = true;
+            }
+        }
+        return answer;
+    }
+
+
     public static void main(String[] args) {
 
         String repo = "https://github.com/dongyeon-0822/java-project-exercise";
