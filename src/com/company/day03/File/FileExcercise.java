@@ -3,6 +3,7 @@ package com.company.day03.File;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class FileExcercise {
 
@@ -16,5 +17,13 @@ public class FileExcercise {
             System.out.println("file = " + file);
         }
     }
+
+    public char readChar(String filename) throws IOException {
+
+        FileReader fileReader = new FileReader(filename);
+        return (char) fileReader.read();
+    }
+
+ //
 
 }
