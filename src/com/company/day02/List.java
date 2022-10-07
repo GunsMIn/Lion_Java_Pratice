@@ -2,7 +2,7 @@ package com.company.day02;
 
 import java.util.ArrayList;
 
-public class List {
+public class List<P> {
     java.util.List<String> names = new ArrayList<>();
 
     public static void main(String[] args) {

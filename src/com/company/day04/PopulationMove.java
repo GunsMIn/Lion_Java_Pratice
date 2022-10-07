@@ -11,8 +11,7 @@ public class PopulationMove {
         this.toSido = toSido;
     }
 
-    //parsing해주는 생성자
-
+    //data(String)으로 넘어온 데이터를 parsing 생성자
     public PopulationMove(String fromSido, String toSido) {
         this.fromSido = Integer.parseInt(fromSido);
         this.toSido = Integer.parseInt(toSido);
