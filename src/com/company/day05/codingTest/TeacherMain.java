@@ -1,4 +1,4 @@
-package com.company.day05;
+package com.company.day05.codingTest;
 
 import java.util.Scanner;
 

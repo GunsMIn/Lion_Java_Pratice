@@ -1,4 +1,4 @@
-package com.company.day05;
+package com.company.day05.codingTest;
 
 import java.util.Scanner;
 
@@ -10,18 +10,17 @@ public class Main {
         int sum = 0;
         while (n != 0) {
             sum += n % 10;
+            System.out.println("나머지"+ n%10);
+            System.out.println("몫"+ n/10);
             n = n / 10;
         }
         return sum;
     }
 
-
     public static void main(String[] args) {
-
         Main m = new Main();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println(m.solution(n));
-
     }
 }
