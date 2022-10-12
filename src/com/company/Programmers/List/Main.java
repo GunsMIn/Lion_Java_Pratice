@@ -1,6 +1,5 @@
-package com.company.Programmers.List;
+package com.company.Programmers.sort.online;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Main {
