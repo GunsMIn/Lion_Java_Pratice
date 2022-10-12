@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main1 {
 
-
+    //
     //map을 사용한 최댓값과 순서구하기
     public String solutions(int[] arr) {
         String answer = "";
@@ -38,9 +38,6 @@ public class Main1 {
         answer = max;
         return answer;
     }
-
-
-
 
 
     public static void main(String[] args) {
