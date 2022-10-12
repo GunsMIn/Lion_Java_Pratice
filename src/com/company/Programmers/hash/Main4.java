@@ -1,4 +1,4 @@
-package com.company.day05.codingTest;
+package com.company.Programmers.hash;
 
 import java.util.*;
 
@@ -40,7 +40,7 @@ public class Main4 {
 
     public int soultion(int[] nums) {
         int answer = 0;
-        int max = nums.length / 2;
+        int max = nums.length / 2; // 최대 고를 수 있는 개수
         Set<Integer> set = new HashSet<>();
         for (int num : nums) {
             set.add(num); // 중복제거
@@ -52,6 +52,31 @@ public class Main4 {
         }
         return answer;
     }
+    /*배열의 숫자들을 중복을 제거했을때 갯수가 원래 배열 nums/2 보다 크다면 최대 고를 수 있는 종류는 nums/2가 되고
+    nums/2 보다 작거나 같다면 최대 고를 수 있는 종류는 중복을 제거했을때의 갯수가 된다.
+    그래서 중복이 허용되지 않는 자료구조인 HashSet을 사용해서 입력받은 배열의 숫자를 모두 HashSet에 담아서
+    중복을 제거한 후 크기와 비교하여 처리했다.*/
+
+    public int soultion2(int[] nums) {
+        int answer = 0;
+        int max = nums.length / 2;
+        Set<Integer> set = new HashSet<>();
+
+        for (int num : nums) {
+            set.add(num); // 중복제거
+        }
+        int size = set.size();
+        if (max < size) {
+            answer = max;
+        }else{
+            answer = size;
+        }
+
+        return answer;
+    }
+
+
+
 
     public static void main(String[] args) {
         Main4 m = new Main4();
