@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Main1 {
 
-    //
-    //map을 사용한 최댓값과 순서구하기
+
+    //map을 사용한 최댓값과 순서구하기 key value
     public String solutions(int[] arr) {
         String answer = "";
         int max = Integer.MIN_VALUE;
