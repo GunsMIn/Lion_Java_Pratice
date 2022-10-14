@@ -31,6 +31,33 @@ public class Solution2 {
       }
 
 
+
+
+    public String solutions(int[] numbers) {
+
+        String answer = "";
+        String[] strArr = new String[numbers.length];
+
+        for (int i = 0; i < numbers.length; i++) {
+            strArr[i] = String.valueOf(numbers[i]);
+        }//  숫자열이 문자열 pasrsing 로 들어감
+
+        Arrays.sort(strArr, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return (o2+o1).compareTo(o1+o2);
+            }
+        });
+
+        for (String s : strArr) {
+            answer += s;
+        }
+        return answer;
+
+
+    }
+
+
     public static void main(String[] args) {
 
         Solution2 s = new Solution2();
@@ -44,12 +71,5 @@ public class Solution2 {
 
 
 
-/* int max = Integer.MIN_VALUE;
-   //우선 첫번째 숫자를 가장큰수를 가장앞에 놓아야한다.
- for (int i = 0; i < numbers.length; i++) {
-     max = Math.max(max, numbers[i]);
 
- }
-
- answer += String.valueOf(max);*/
 
