@@ -29,7 +29,7 @@ public class Hash3 {
         boolean answer = true;
         Map<String, Integer> map = new HashMap<>();
 
-        for (String phoneNum : phoneBook) {
+        for (String phoneNum : phoneBook) { // 해싱 단계
             map.put(phoneNum, 1);
         }
         for (int i = 0; i < phoneBook.length; i++) {
@@ -41,11 +41,12 @@ public class Hash3 {
             }
         }
 
-
-
-
         return answer;
     }
+
+
+
+
 
 
 
