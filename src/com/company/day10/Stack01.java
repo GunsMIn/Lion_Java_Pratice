@@ -3,9 +3,11 @@ package com.company.day10;
 import jdk.jfr.StackTrace;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Stack;
 
 public class Stack01 {
+    //https://freestrokes.tistory.com/m/82
 
     private int[] arr = new int[100]; // 정해놓은 100개를 넘어섰을때 stack overflow발생!
 
@@ -22,18 +24,39 @@ public class Stack01 {
     public void push(int value) {
         arr[pointer] = value;
         pointer++;
+        System.out.println(value+ " Push!");
     }
+
+    public int pop() {
+        int value = this.arr[pointer];
+        pointer--;
+        return value;
+
+        //return arr[pointer--];
+    }
+
 
     public int[] getArr() {
         return arr;
     }
 
+    public boolean isEmpty() {
+        //
+        return (this.pointer == 0);
+    }
 
     public static void main(String[] args) {
         Stack01 s = new Stack01();
         int[] arr = s.getArr();
-        s.push(10);
-        s.push(20);
+        /*s.push(10);
+        s.push(20);*/
+
+
+        for (int i = 0; i < arr.length; i++) {
+            double r = Math.random();
+            arr[i] = (int) (r * 100) +1 ;
+        }
         System.out.println(Arrays.toString(arr));
+        System.out.println(s.pop());
     }
 }
