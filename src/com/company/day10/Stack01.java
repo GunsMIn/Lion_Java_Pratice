@@ -13,7 +13,6 @@ public class Stack01 {
 
     private int pointer = 0;
 
-
     public Stack01() {;}
 
     public Stack01(int size) {
@@ -31,7 +30,6 @@ public class Stack01 {
         int value = this.arr[pointer];
         pointer--;
         return value;
-
         //return arr[pointer--];
     }
 
@@ -41,21 +39,16 @@ public class Stack01 {
     }
 
     public boolean isEmpty() {
-        //
         return (this.pointer == 0);
     }
 
     public static void main(String[] args) {
         Stack01 s = new Stack01();
         int[] arr = s.getArr();
-        /*s.push(10);
-        s.push(20);*/
+        s.push(10);
+        s.push(20);
 
 
-        for (int i = 0; i < arr.length; i++) {
-            double r = Math.random();
-            arr[i] = (int) (r * 100) +1 ;
-        }
         System.out.println(Arrays.toString(arr));
         System.out.println(s.pop());
     }
