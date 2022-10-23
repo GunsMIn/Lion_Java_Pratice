@@ -1,4 +1,4 @@
-package com.company.Programmers.sort.online;
+package com.company.Programmers.List;
 
 import java.util.LinkedList;
 

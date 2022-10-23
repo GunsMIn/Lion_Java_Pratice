@@ -14,7 +14,7 @@ public class Solution3 {
         }
         return list.stream().mapToInt(Integer::intValue).toArray();
     }
-    
+
     //풀이 2번번
    public int[] solutions(long n) {
         List<Integer> list = new ArrayList<>();
